@@ -1,0 +1,60 @@
+body {
+    box-sizing: border-box;
+}
+
+#planner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(255, 226, 231);
+    padding: 20px 40px;
+}
+
+.no-task-txt {
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(251, 143, 161);
+}
+
+.planner-container {
+    width: 100%;
+}
+
+.planner-input {
+    height: 30px;
+    width: 75%;
+}
+
+.add-task-btn {
+    height: 35px;
+    width: 20%;
+    background-color: pink;
+    border: 1px solid rgb(255, 140, 159);
+    border-radius: 4px;
+}
+
+.input-body {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: "🎀";
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+h1 {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.info {
+    font-size: 0.5em;
+}

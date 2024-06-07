@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script type="module" src="script.js" defer></script>
+    <title>Daily Tasks</title>
+</head>
+
+<body>
+    <h1>Planner</h1>
+
+    <section id="planner">
+        <div class="planner-container">
+            <p class="no-task-txt">{{ headText }}</p>
+
+            <ul v-else>
+                <li v-for="(task, index) in tasks" @click="removeTask(index)" :key="task">
+                    {{ task }}
+                </li>
+            </ul>
+
+            <div class="input-body">
+                <input v-model="enteredValue" type="text" name="" id="" class="planner-input" />
+
+                <button class="add-task-btn" @click="addTask">Add Task</button>
+            </div>
+            <p class="info">*Click on task to delete!</p>
+        </div>
+    </section>
+</body>
+
+</html>
