@@ -17,7 +17,7 @@
         <div class="planner-container">
             <p class="no-task-txt">{{ headText }}</p>
 
-            <ul v-else>
+            <ul>
                 <li v-for="(task, index) in tasks" @click="removeTask(index)" :key="task">
                     {{ task }}
                 </li>
