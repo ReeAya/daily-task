@@ -3,7 +3,7 @@ import { createApp } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
 createApp({
   data() {
     return {
-      tasks: JSON.parse(localStorage.getItem("tasks")) || ["Go Shopping],
+       tasks: JSON.parse(localStorage.getItem("tasks")) || ["Go Shopping"],
       enteredValue: "",
     };
   },
